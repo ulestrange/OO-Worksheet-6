@@ -51,7 +51,7 @@ namespace BankAccount
         }
 
 
-        public double Balance { get;  set; }
+        public double Balance { get; set; }
 
         public int PIN { get; set; }
 
@@ -85,26 +85,58 @@ namespace BankAccount
             return Balance;
         }
 
-        /* Takes a decimal deducts it to the balance in the account
-         * and returns the new balance 
+        /* 
+         * Takes a decimal and a PIN, if the PIN is correc it deducts it to the balance in the account
+         * and returns true otherwise it returns FALSe 
          */
 
-        public double Withdraw(double amount)
+        public bool Withdraw(double amount, int pin)
         {
-            Balance -= amount;
-            return Balance;
+
+            if (pin == PIN)
+            {
+                Balance -= amount;
+                return true;
+            }
+            else
+            {
+                return false;
+            }
         }
 
-        public double GetBalance()
+        /*This is a hard one because we need to return a balance
+         * but also want to know if the PIN was correct. It uses an out parameter
+         * which will be true when the PIN is valid.
+         * If the pin is not valid it returns 0 as the balance and the second parameter is set to false.
+         */
+
+        public double GetBalance(int pin, out bool isValidPIN)
         {
-            return Balance;
+            if (PIN == pin)
+            {
+                isValidPIN = true;
+                return Balance;
+            }
+            else
+            {
+                isValidPIN = false;
+                return 0;
+            }
         }
+
+
+
+
+        /* This takes two PIN numbers as arguments, if the first number
+         * equals the stored PIN it changes the stored PIN to the second number and returns true
+         * otherwise it returns false and the stored PIN doesn't change.
+         */
 
         public bool ChangePin(int newPin, int oldPin)
         {
             if (oldPin == PIN)
             {
-                PIN = newPin;
+                PIN = newPin; 
                 return true;
             }
             else
