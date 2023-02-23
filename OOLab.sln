@@ -1,11 +1,13 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio Version 16
-VisualStudioVersion = 16.0.29728.190
+# Visual Studio Version 17
+VisualStudioVersion = 17.3.32922.545
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Circle", "Circle\Circle.csproj", "{BF817F46-0A39-493A-A198-7C4604710E35}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BankAccount", "BankAccount\BankAccount.csproj", "{3F77A666-56EA-4E53-A037-4D1DE1FD0912}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BankAccount", "BankAccount\BankAccount.csproj", "{3F77A666-56EA-4E53-A037-4D1DE1FD0912}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Q1Employee", "Q1Employee\Q1Employee.csproj", "{724FD0BD-8FF3-4E5C-987E-E9C5F4511DA2}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -21,6 +23,10 @@ Global
 		{3F77A666-56EA-4E53-A037-4D1DE1FD0912}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{3F77A666-56EA-4E53-A037-4D1DE1FD0912}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{3F77A666-56EA-4E53-A037-4D1DE1FD0912}.Release|Any CPU.Build.0 = Release|Any CPU
+		{724FD0BD-8FF3-4E5C-987E-E9C5F4511DA2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{724FD0BD-8FF3-4E5C-987E-E9C5F4511DA2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{724FD0BD-8FF3-4E5C-987E-E9C5F4511DA2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{724FD0BD-8FF3-4E5C-987E-E9C5F4511DA2}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
