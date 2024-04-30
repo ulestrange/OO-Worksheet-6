@@ -6,7 +6,7 @@ namespace Circle
 {
     class Circle
     {
-        private double radius;
+        private double _radius;
         //temp
 
 
@@ -15,23 +15,23 @@ namespace Circle
         {
             get
             {
-                return radius;
+                return _radius;
             }
             set
             {
-                radius = value;
+                _radius = value;
             }
         }
 
 
         public Circle ()
         {
-            radius = 1;
+            _radius = 1;
         }
 
         public Circle (double r)
         {
-            radius = r;
+            _radius = r;
         }
 
         /* This returns the area of the circle
@@ -39,12 +39,12 @@ namespace Circle
 
         public double GetArea()
         {
-            return Math.PI * radius * radius;
+            return Math.PI * _radius * _radius;
         }
 
         public override string  ToString()
         {
-            return String.Format("The radius of this circle is {0}", radius);
+            return String.Format("The radius of this circle is {0}", _radius);
         }
        
     }

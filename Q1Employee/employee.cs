@@ -26,33 +26,17 @@ namespace Q1Employee
 
         public string Name
         {
-            get
-            {
-                return _name;
-            }
-            set
-            {
-                _name = value;
-            }
+            get { return _name;}
+            set {  _name = value;}
         }
 
 
         // Gender property used to get and set the gender attribute of an object 
 
         public string Gender
-
         {
-            get
-
-            {
-                return _gender;
-            }
-
-            set
-
-            {
-                _gender = value;
-            }
+            get { return _gender; }
+            set { _gender = value; }
         }
 
 
@@ -95,34 +79,25 @@ namespace Q1Employee
 
         }
 
-
-
-
-
         //parameterised constructor 
 
-        public Employee(string n, string b, double p)
+        public Employee(string name, string gendeer, double rate)
 
         {
 
-            Name = n;
-            Gender = b;
-            HourlyRate = p;
+            Name = name;
+            Gender = gendeer;
+            HourlyRate = rate;
             lastEmployeeNumber++;  // increment the static variable by 1 
             EmployeeNumber = lastEmployeeNumber; // assign to the employee number attribute 
         }
 
-        // Method tp print the attributes of an object 
+        // Method to print the attributes of an object 
 
         public override string ToString()
-
         {
-
             return "Name: " + Name + " Gender : " + Gender + " Rate : " + HourlyRate + " Employee # : " + EmployeeNumber;
-
         }
-
-
 
         // a=Method to calculate an employees pay, employees work 40 hours 
 
